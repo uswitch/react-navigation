@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
-import { TabView as TabViewAnimated, PagerPan } from 'react-native-tab-view';
+import { TabView, PagerPan } from 'react-native-tab-view';
 import SafeAreaView from 'react-native-safe-area-view';
 
 import ResourceSavingSceneView from '../ResourceSavingSceneView';
 import withCachedChildNavigation from '../../withCachedChildNavigation';
 
-class TabView extends React.PureComponent {
+class TabViewWrap extends React.PureComponent {
   static defaultProps = {
     lazy: true,
     removedClippedSubviews: true,
@@ -189,11 +189,11 @@ class TabView extends React.PureComponent {
       style: styles.container,
     };
 
-    return <TabViewAnimated {...props} />;
+    return <TabView {...props} />;
   }
 }
 
-export default withCachedChildNavigation(TabView);
+export default withCachedChildNavigation(TabViewWrap);
 
 const styles = StyleSheet.create({
   container: {
