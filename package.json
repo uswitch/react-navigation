@@ -37,14 +37,14 @@
     "react-native-safe-area-view": "0.13.1",
     "react-native-tab-view": "github:react-navigation/react-native-tab-view",
     "react": "16.2.0",
-    "react-native": "^0.52.0"
+    "react-native": "^0.52.0",
+    "babel-preset-react-native": "^2.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.3",
-    "babel-preset-react-native": "^2.1.0",
     "codecov": "^2.2.0",
     "eslint": "^4.2.0",
     "eslint-config-prettier": "^2.3.0",
