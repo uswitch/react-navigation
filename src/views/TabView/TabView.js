@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Platform } from 'react-native';
-import { TabView, PagerPan } from 'react-native-tab-view';
+import { TabView as TabViewAnimated, PagerPan } from 'react-native-tab-view';
 import SafeAreaView from 'react-native-safe-area-view';
 
 import ResourceSavingSceneView from '../ResourceSavingSceneView';
@@ -189,7 +189,7 @@ class TabView extends React.PureComponent {
       style: styles.container,
     };
 
-    return <TabView {...props} />;
+    return <TabViewAnimated {...props} />;
   }
 }
 
